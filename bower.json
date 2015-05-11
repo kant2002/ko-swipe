@@ -20,6 +20,7 @@
     "tests"
   ],
   "dependencies": {
-    "swipe" : "https://github.com/kant2002/Swipe.git#master"
+    "swipe" : "https://github.com/kant2002/Swipe.git#master",
+    "knockout": "^3.0.0"
   }
 }
