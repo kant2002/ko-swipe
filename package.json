@@ -1,0 +1,27 @@
+{
+  "name": "ko-swipe",
+  "version": "1.0.0",
+  "description": "Knockout binding for Swipe",
+  "main": "ko-swipe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc --out ko-swipe.js --module amd ko-swipe.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kant2002/ko-swipe.git"
+  },
+  "keywords": [
+    "Knockout",
+    "Swipe"
+  ],
+  "author": "Andrey Kurdyumov <kant2002@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kant2002/ko-swipe/issues"
+  },
+  "homepage": "https://github.com/kant2002/ko-swipe",
+  "dependencies": {
+    "typescript": "^1.5.0-beta"
+  }
+}

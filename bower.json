@@ -1,0 +1,25 @@
+{
+  "name": "ko-swipe",
+  "version": "1.0.0",
+  "homepage": "https://github.com/kant2002/ko-swipe",
+  "authors": [
+    "Andrey Kurdyumov <kant2002@gmail.com>"
+  ],
+  "description": "Knockout binding for Swipe",
+  "main": "ko-swipe.js",
+  "keywords": [
+    "Swipe",
+    "Knockout"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "swipe" : "https://github.com/kant2002/Swipe.git#master"
+  }
+}
