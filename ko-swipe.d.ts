@@ -12,3 +12,6 @@ interface KnockoutBindingHandlers {
 	swipe: KnockoutSwipeBindingHandler;
 	swipeForeach: KnockoutBindingHandler;
 }
+
+declare module "ko-swipe" {
+}
