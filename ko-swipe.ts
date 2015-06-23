@@ -90,13 +90,13 @@ ko.bindingHandlers["swipe"] = swipeHandler;
 ko.bindingHandlers["swipeForeach"] = {
     init: function (element: HTMLElement, valueAccessor: () => any, allBindingsAccessor: KnockoutAllBindingsAccessor,
         viewModel: any, bindingContext: SwipeKnockoutBindingContext) {
-        swipeHandler.log("swipeForeach init ", valueAccessor()(), viewModel, bindingContext.$swiper);
+        swipeHandler.log("swipeForeach init ", ko.unwrap(valueAccessor()), viewModel, bindingContext.$swiper);
         ko.bindingHandlers.foreach.init(element, valueAccessor, allBindingsAccessor, viewModel, bindingContext);
         return { controlsDescendantBindings: true };
     },
     update: function (element, valueAccessor: () => any, allBindingsAccessor: KnockoutAllBindingsAccessor,
         viewModel: any, bindingContext: SwipeKnockoutBindingContext) {
-        swipeHandler.log("swipeForeach update ", valueAccessor()(), viewModel, bindingContext.$swiper);
+        swipeHandler.log("swipeForeach update ", ko.unwrap(valueAccessor()), viewModel, bindingContext.$swiper);
         ko.bindingHandlers.foreach.update(element, valueAccessor, allBindingsAccessor, viewModel, bindingContext);
         swipeHandler.log("Preious slider position ", bindingContext.$swiperIndex);
         bindingContext.$swiper.kill();
